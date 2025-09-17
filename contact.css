@@ -1,0 +1,157 @@
+/* Réinitialisation des styles par défaut pour tous les éléments */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles pour le corps de la page */
+body {
+    background: radial-gradient(circle, #d6e4e5, #82b1c1); /* Dégradé radial comme fond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+	background: rgb(184,203,208); /* Couleur de fond de base */
+	background: radial-gradient(circle, rgba(184,203,208,1) 0%, rgba(37,125,148,1) 100%); /* Dégradé radial */
+}	
+
+/* Barre de navigation verticale à gauche */
+nav {
+  position: fixed; /* Position fixe pour la barre de navigation */
+  top: 0;
+  bottom: 0;
+  height: 100%; /* Prend toute la hauteur de la fenêtre */
+  left: 0;
+  background: #fff;
+  width: 100px;
+  overflow: hidden; /* Cache le contenu débordant */
+  transition: width 0.2s linear; /* Transition fluide lors du survol */
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.102); /* Ombre pour donner de la profondeur */
+}
+
+/* Style du logo dans la barre de navigation */
+.logo {
+  text-align: left;
+  display: flex;
+  transition: all 0.5s ease; /* Transition douce pour les changements d'état */
+  margin: 10px 0 0 10px; /* Marges pour espacer le logo */
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Forme circulaire pour l'image du logo */
+}
+
+.logo span {
+  font-weight: 600; /* Met le texte en gras */
+  color: #000; /* Couleur noire pour le texte du logo */
+  padding-left: 15px;
+  top: 10px;
+  font-size: 18px;
+  text-transform: uppercase; /* Transforme le texte en majuscules */
+}
+
+/* Styles pour les liens dans la navigation */
+a {
+  position: relative;
+  color: #000; /* Couleur du texte des liens */
+  font-size: 13px;
+  display: table;
+  width: 300px;
+  padding: 20px;
+}
+
+/* Styles pour les icônes dans les liens */
+li a .icon {
+  position: relative;
+  width: 60px;
+  height: 20px;
+  top: 14px;
+  font-size: 2px; /* Taille de la police des icônes */
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 8px;
+  margin-left: 20px; /* Espacement à gauche des éléments de navigation */
+}
+
+/* Couleur de fond au survol d'un lien */
+a:hover {
+  background: #eee;
+}
+
+/* Élargissement de la barre de navigation au survol */
+nav:hover {
+  width: 280px;
+  transition: all 0.5s ease; /* Transition douce pour l'élargissement */
+}
+
+/* Conteneur principal pour le contenu */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px; /* Espacement */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+    max-width: 500px;
+}
+
+/* Styles pour le titre principal */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Couleur du titre */
+}
+
+/* Styles pour les paragraphes */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #5d6d7e; /* Couleur du texte des paragraphes */
+}
+
+/* Styles pour les informations de contact */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre les éléments de contact */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+}
+
+/* Styles pour chaque élément de contact */
+.contact-item {
+    display: flex;
+    align-items: flex-start; /* Aligne verticalement les éléments */
+    gap: 15px; /* Espacement entre l'icône et le texte */
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Styles pour l'icône des éléments de contact */
+.contact-item img.icon {
+    width: 24px; /* Largeur de l'icône */
+    height: 24px; /* Hauteur de l'icône */
+    margin-top: 5px; /* Espacement pour centrer l'icône */
+}
+
+/* Styles pour le texte des éléments de contact */
+.contact-item div {
+    line-height: 1.5; /* Espacement entre les lignes de texte */
+    color: #34495e; /* Couleur du texte */
+}
+
+/* Styles pour le texte en gras dans les éléments de contact */
+.contact-item div strong {
+    color: #2c3e50; /* Couleur du texte en gras */
+    font-weight: bold; /* Met le texte en gras */
+}
+

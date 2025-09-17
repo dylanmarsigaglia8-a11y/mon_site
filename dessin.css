@@ -1,0 +1,161 @@
+/* Stylisation principale du corps avec alignement centré et fond en dégradé */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+	padding: 80px;
+	background: rgb(184,203,208);
+	background: radial-gradient(circle, rgba(184,203,208,1) 0%, rgba(37,125,148,1) 100%);
+	font-family: Sans-serif;
+    align-items: center;
+    color: #333;
+    padding: 20px;
+}
+
+/* Réinitialisation de base pour enlever les marges et paddings par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Barre de navigation verticale à gauche de l'écran */
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: #fff;
+  width: 100px;
+  overflow: hidden; /* Cache le contenu débordant */
+  transition: width 0.2s linear; /* Transition douce pour l'élargissement */
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.102); /* Ombre portée pour donner de la profondeur */
+}
+
+/* Logo avec image ronde */
+.logo {
+  text-align: left;
+  display: flex;
+  transition: all 0.5s ease; /* Transition douce pour les changements d'état */
+  margin: 10px 0 0 10px; /* Marges pour espacer le logo */
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Rend l'image ronde */
+}
+
+.logo span {
+  font-weight: 600;
+   color: #000; /* Couleur noire pour le texte du logo */
+  padding-left: 15px;
+  top: 10px;
+  font-size: 18px;
+  text-transform: uppercase; /* Transforme le texte en majuscules */
+}
+
+a {
+  position: relative;
+  color: #000;
+  font-size: 13px;
+  display: table; /* Utilise un affichage de type table pour les liens */
+  width: 300px;
+  padding: 20px;
+}
+
+/* Style des icônes dans les liens */
+li a .icon {
+  position: relative; /* Positionnement relatif pour le style des icônes */
+  width: 60px; /* Largeur des icônes */
+  height: 20px; /* Hauteur des icônes */
+  top: 14px; /* Position verticale des icônes */
+  font-size: 2px; /* Taille de la police des icônes */
+  text-align: center; /* Centre le contenu de l'icône */
+}
+
+.nav-item {
+  position: relative;
+  top: 8px;
+  margin-left: 20px; /* Espacement à gauche des éléments de navigation */
+}
+
+/* Couleur de fond au survol d'un lien */
+a:hover {
+  background: #eee;
+}
+
+/* Élargit la barre de navigation au survol */
+nav:hover {
+  width: 280px; /* Élargit la barre lors du survol */
+  transition: all 0.5s ease; /* Transition douce pour l'élargissement */
+}
+
+/* Style du conteneur principal du texte */
+.container {
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre portée pour donner de la profondeur */
+    max-width: 700px; /* Largeur maximale */
+    margin: 20px;
+}
+
+/* Style du titre */
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px; /* Espacement en bas du titre */
+    color: #2c3e50;
+}
+
+/* Paragraphe avec alignement justifié et espacement */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    line-height: 1.6; /* Hauteur de ligne pour l'espacement entre les lignes */
+    text-align: justify; /* Justifie le texte du paragraphe */
+}
+
+/* Galerie de figures avec grille réactive */
+.gallery {
+    display: grid; /* Utilise une grille pour organiser les éléments */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Crée des colonnes réactives */
+    gap: 15px; /* Espacement entre les éléments de la grille */
+    margin-top: 20px; /* Marges au-dessus de la galerie */
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    width: 100%; /* L'image prend toute la largeur de son conteneur */
+    height: auto;
+    border-radius: 8px; /* Coins arrondis pour les images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+    transition: transform 0.3s; /* Transition douce pour l'effet de survol */
+}
+
+/* Animation au survol de l'image */
+figure img:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+}
+
+figcaption {
+    font-size: 12px; /* Taille de la police pour la légende de l'image */
+    color: #7d8c96; /* Couleur de la légende */
+    margin-top: 5px; /* Espacement en haut de la légende */
+    text-align: center; /* Centre la légende sous l'image */
+}
+

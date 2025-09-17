@@ -1,0 +1,131 @@
+/* Réinitialise les marges, bordures et padding */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Style de fond avec un dégradé radial */
+body {
+    font-family: Arial, sans-serif;
+	background: rgb(184,203,208);
+	background: radial-gradient(circle, rgba(184,203,208,1) 0%, rgba(37,125,148,1) 100%);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}	
+
+/* Barre de navigation verticale à gauche de l'écran */
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: #fff;
+  width: 100px; /* largeur réduite initialement */
+  overflow: hidden; /* Masque tout contenu qui dépasse */
+  transition: width 0.2s linear; /* Transition fluide de la largeur au survol */
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: left;
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 10px 0 0 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Rend l'image ronde */
+}
+
+.logo span {
+  font-weight: 600; /* Épaisseur du texte */
+  color: #000; /* Couleur uniforme avec les autres textes */
+  padding-left: 15px;
+  top: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Liens de navigation */
+a {
+  position: relative;
+  color: #000;
+  font-size: 13px;
+  display: table;
+  width: 300px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style des icônes dans les liens */
+li a .icon {
+  position: relative;
+  width: 60px;
+  height: 20px;
+  top: 14px;
+  font-size: 2px;
+  text-align: center;
+}
+
+/* Style des éléments de texte dans la navigation */
+.nav-item {
+  position: relative;
+  top: 8px;
+  margin-left: 20px;
+}
+
+/* Couleur de fond au survol d'un lien */
+a:hover {
+  background: #eee;
+}
+
+/* Élargit la barre de navigation au survol */
+nav:hover {
+  width: 280px;
+  transition: all 0.5s ease;
+}
+
+/* Style du cadre principal contenant le texte de présentation */
+.intro-box {
+  background-color: #fff;
+  border-radius: 10px; /* Bords arrondis */
+  padding: 40px; /* Espacement interne */
+  max-width: 60%; /* Limite la largeur pour garder le texte lisible */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre pour donner un effet flottant */
+  color: #333; /* Couleur de texte gris foncé */
+}
+
+/* Style du paragraphe dans le cadre principal */
+p {
+  font-size: 16px;
+  text-align: justify; /* Justifie le texte pour une apparence soignée */
+  line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+}
+
+/* Texte en gras avec une couleur bleue pour attirer l’attention */
+strong {
+  font-weight: bold;
+}
+
+/* Texte en italique avec une couleur gris foncé */
+em {
+  font-style: italic;
+  color: #555; /* Couleur gris foncé */
+}
+
+/* Style de l'en-tête principal */
+h1 {
+  font-size: 36px; /* Taille de police importante pour mettre en valeur le titre */
+  text-align: center;
+  margin-bottom: 20px; /* Espacement en dessous du titre */
+}

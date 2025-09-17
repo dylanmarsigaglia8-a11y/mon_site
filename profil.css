@@ -1,0 +1,137 @@
+/* Corps de la page : mise en page en colonne, centré verticalement */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+	background-color: #B8CBD0;
+	font-family: Sans-serif;
+}
+
+/* Réinitialise les marges, bordures et padding */
+* {
+  margin: 0; /* Supprime les marges pour tous les éléments */
+  padding: 0; /* Supprime les paddings pour tous les éléments */
+  outline: none;
+  border: none; /* Supprime les bordures par défaut */
+  text-decoration: none; /* Supprime le soulignement des liens */
+  box-sizing: border-box; /* Inclut les paddings et bordures dans les dimensions totales */
+  font-family: Arial, sans-serif;
+}
+
+/* Dégradé radial en arrière-plan du corps */
+body {
+	background: rgb(184,203,208);
+	background: radial-gradient(circle, rgba(184,203,208,1) 0%, rgba(37,125,148,1) 100%);
+}
+
+/* Barre de navigation verticale à gauche de l'écran */
+nav {
+  position: fixed;
+  top: 0; /* Aligne le haut de la barre avec le haut de la page */
+  bottom: 0; /* Aligne le bas de la barre avec le bas de la page */
+  height: 100%;
+  left: 0;
+  background: #fff;
+  width: 100px; /* largeur réduite initiale */
+  overflow: hidden;
+  transition: width 0.2s linear; /* Transition fluide au survol */
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.102); /* Ombre portée pour donner de la profondeur */
+}
+
+/* Style du logo dans la barre de navigation */
+.logo {
+  text-align: left;
+  display: flex;
+  transition: all 0.5s ease; /* Transition douce pour les changements d'état */
+  margin: 10px 0 0 10px; /* Marges pour espacer le logo */
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Forme circulaire du logo */
+}
+
+.logo span {
+  font-weight: 600; /* Met le texte du logo en gras */
+  color: #000; /* Couleur noire pour le texte du logo */
+  padding-left: 15px;
+  top: 10px; /* Position verticale du texte */
+  font-size: 18px;
+  text-transform: uppercase; /* Transforme le texte en majuscules */
+}
+
+/* Styles pour les liens de navigation */
+a {
+  position: relative;
+  color: #000; /* Couleur du texte des liens */
+  font-size: 13px;
+  display: table;
+  width: 300px;
+  padding: 20px;
+}
+
+/* Style des icônes dans les liens */
+li a .icon {
+  position: relative;
+  width: 60px;
+  height: 20px;
+  top: 14px; /* Position verticale des icônes */
+  font-size: 2px;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 8px;
+  margin-left: 20px; /* Espacement à gauche des éléments de navigation */
+}
+
+/* Couleur de fond au survol d'un lien */
+a:hover {
+  background: #eee;
+}
+
+/* Élargit la barre de navigation au survol */
+nav:hover {
+  width: 280px; /* Élargit la barre lors du survol */
+  transition: all 0.5s ease; /* Transition douce pour l'élargissement */
+}
+
+/* Contenu centré verticalement */
+.content {
+	display: flex;
+	flex-direction: column; /* Organise le contenu en colonne */
+	align-items: center; /* Centre les éléments horizontalement */
+    padding-top: 60px;
+    text-align: center;
+}
+
+/* Titre principal de la section */
+h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+/* Paragraphe de description */
+p {
+    color: #ffffff;
+    font-size: 18px;
+    max-width: 80%;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Style de la vidéo */
+.custom-video {
+    width: 360px; /* Largeur adapté pour le format portrait */
+    height: 640px; /* Hauteur pour le format portrait */
+    border-radius: 18px; /* Coins arrondis de la vidéo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+    margin-bottom: 40px; /* Espacement en bas de la vidéo */
+}
+
